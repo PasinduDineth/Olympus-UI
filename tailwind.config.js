@@ -7,12 +7,12 @@ export default {
   ],
   theme: {
     colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#fd8549',
-      'green': '#13ce66',
-      'yellow': '#ffc123',
+      'primary': '#FF204E',
+      'secondary': '#A0153E',
+      'tertiary': '#5D0E41',
+      'quaternary': '#00224D',
+      'quinary': '#ffe6ec',
+      'senary': '#FFF8E8',
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',

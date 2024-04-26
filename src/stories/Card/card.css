@@ -1,12 +1,1 @@
-.oui-button {
-  @apply font-sans font-[500] border-0 rounded-[3em] cursor-pointer inline-block leading-[1]
-}
-.oui-button--small {
-  @apply text-[14px] px-[40px] py-[14px]
-}
-.oui-button--medium {
-  @apply text-[16px] px-[60px] py-[20px]
-}
-.oui-button--large {
-  @apply text-[18px] px-[70px] py-[22px]
-}
+

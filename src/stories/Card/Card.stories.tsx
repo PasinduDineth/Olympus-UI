@@ -1,46 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { Button } from './Button';
+import { Card } from './Card';
 
 const meta = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Card',
+  component: Card,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: 'color' }
   },
   args: { onClick: fn() },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
   },
 };
-
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    title: 'Card Title',
+    content: 'This is a sample of a Card component',
   },
-};
-
-export const Large: Story = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
-};
+}

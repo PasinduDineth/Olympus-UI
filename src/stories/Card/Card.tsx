@@ -1,48 +1,38 @@
-import React from 'react';
-import './button.css';
+import './Card.css';
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
+interface CardProps {
   primary?: boolean;
-  /**
-   * What background color to use
-   */
+  customContentEnabled?: boolean;
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
+  content?: string;
+  title?: string;
   onClick?: () => void;
 }
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const Card = ({
   primary = false,
-  size = 'medium',
+  customContentEnabled = false,
+  content = 'This is a sample of a Card component. You can pass a string as a property to change this. Please change type or any other property to get a new look and feel or activate any other features such as buttons.',
+  title = 'Card Title',
   backgroundColor,
-  label,
   ...props
-}: ButtonProps) => {
-  const mode = primary ? 'text-white bg-yellow' : 'text-white bg-orange';
+}: CardProps) => {
+  const mode = primary ? 'bg-gray-light' : 'bg-quinary';
   return (
-    <button
-      type="button"
-      className={['oui-button', `oui-button--${size}`, mode].join(' ')}
+    <div
+      className={['rounded-lg', 'p-4', 'm-2', 'flex', 'flex-col', mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
-    </button>
+      {customContentEnabled ? <p>custom body</p> :
+        <>
+          <p className='font-bold text-normal font-sans text-quaternary'>{title}</p>
+          <p className='mt-2 text-xs font-sans text-quaternary text-justify'>{content}</p>
+        </>
+      }      
+    </div>
   );
 };
