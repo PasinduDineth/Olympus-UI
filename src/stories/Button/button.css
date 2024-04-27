@@ -1,12 +1,17 @@
 .oui-button {
-  @apply font-sans font-[500] border-0 rounded-[3em] cursor-pointer inline-block leading-[1]
+  @apply font-sans font-[600] rounded-[0.5em] cursor-pointer inline-block leading-[1] w-fit
 }
-.oui-button--small {
-  @apply text-[14px] px-[40px] py-[14px]
+
+.oui-button--xs {
+  @apply text-[12px] px-[20px] py-[10px] my-2
 }
-.oui-button--medium {
-  @apply text-[16px] px-[60px] py-[20px]
+
+.oui-button--sm {
+  @apply text-[14px] px-[40px] py-[14px] my-2
 }
-.oui-button--large {
-  @apply text-[18px] px-[70px] py-[22px]
+.oui-button--md {
+  @apply text-[16px] px-[60px] py-[20px] my-2
+}
+.oui-button--lg {
+  @apply text-[18px] px-[70px] py-[22px] my-2
 }
