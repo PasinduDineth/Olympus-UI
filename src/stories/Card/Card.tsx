@@ -1,5 +1,5 @@
 import './Card.css';
-
+import { Button } from '../Button/Button';
 interface CardProps {
   primary?: boolean;
   customContentEnabled?: boolean;
@@ -30,7 +30,8 @@ export const Card = ({
       {customContentEnabled ? <p>custom body</p> :
         <>
           <p className='font-bold text-normal font-sans text-quaternary'>{title}</p>
-          <p className='mt-2 text-xs font-sans text-quaternary text-justify'>{content}</p>
+          <p className='mt-2 text-sm font-sans text-quaternary text-justify'>{content}</p>
+          <Button label='Login' size='xs' color='quaternary'/>
         </>
       }      
     </div>
