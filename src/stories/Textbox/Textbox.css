@@ -1,0 +1,38 @@
+/* Textbox container */
+.oui-textbox {
+    @apply font-sans font-[500] text-sm rounded-[0.5em] p-2 border-2 text-gray-dark bg-[#f7f7f7] outline-none;
+  }
+   
+.oui-textbox-xs {
+  @apply h-8 text-xs;
+}
+.oui-textbox-sm {
+  @apply h-10 text-sm;
+}
+
+.oui-textbox-md {
+  @apply h-12 text-[16px];
+}
+
+.oui-textbox-lg {
+  @apply h-14 text-lg;
+}
+
+.oui-textbox-label {
+  @apply font-sans font-[600] my-1
+}
+
+.oui-textbox-label-xs {
+  @apply text-xs;
+}
+.oui-textbox-label-sm {
+  @apply text-sm;
+}
+
+.oui-textbox-label-md {
+  @apply text-[16px];
+}
+
+.oui-textbox-label-lg {
+  @apply text-lg;
+}

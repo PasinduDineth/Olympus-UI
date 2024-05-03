@@ -18,8 +18,6 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const mode = color === "primary" ? 'bg-primary text-white' : (color === "secondary" ? 'bg-secondary text-white' : (color === "tertiary" ? 'bg-tertiary text-white' : (color === "quaternary" ? 'bg-quaternary text-white' : (color === "quinary" ? 'bg-quinary text-secondary border border-secondary' : 'bg-senary text-secondary border border-secondary'))));
-  // Template litarals are not properly rendering sometimes in storybook. Had to use above instead of below.
-  // `bg-${color}`;
   return (
     <button
       type="button"
